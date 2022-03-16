@@ -16,5 +16,13 @@ namespace DatumCas01
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string s = textBox1.Text;
+            char[] separators = { ' ', ';' };
+            string[] stringsplit = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            DateTime nejstarsi = DateTime.Today.AddDays(1);
+        }
     }
 }
