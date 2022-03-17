@@ -8,5 +8,14 @@ namespace DatumCas02
 {
     class Class1
     {
+
+        public static TimeSpan PocetDnu(DateTime narozen)
+        {
+            TimeSpan Uplynulo;
+            narozen = narozen.AddYears(65);
+            Uplynulo = DateTime.Today - narozen;
+            return Uplynulo;
+
+        }
     }
 }
