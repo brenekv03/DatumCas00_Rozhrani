@@ -23,6 +23,11 @@ namespace DatumCas01
             char[] separators = { ' ', ';' };
             string[] stringsplit = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
             DateTime nejstarsi = DateTime.Today.AddDays(1);
+            for(int i = 0; i<stringsplit.Length;++i)
+            {
+                //if(stringsplit[i]<nejstarsi)
+            }
+            MessageBox.Show("Datum nejstarší osoby je: ");
         }
     }
 }
