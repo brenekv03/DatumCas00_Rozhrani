@@ -16,5 +16,20 @@ namespace DatumCas05
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(textBox1.Text);
+            int y = int.Parse(textBox2.Text);
+            int sleva = 0;
+            if (Class1.MinTrvanlivostDny(dateTimePicker1.Value, x, y, out sleva))
+            {
+                MessageBox.Show("Ano, je prodejne" + "cena je " + sleva);
+            }
+            else
+            {
+                MessageBox.Show("Zbozi neni prodejne");
+            }
+        }
     }
 }
